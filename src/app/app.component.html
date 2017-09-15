@@ -1,4 +1,4 @@
-<body fxFlex="80%"
+<body fxFlex="100%"
       fxFlex.lt-md="100%"
       ngClass.gt-sm="body-margin">
 <md-toolbar color="accent">
@@ -6,10 +6,10 @@
     <md-icon>menu</md-icon>
   </button>
   ￼
-  <h1>Angular</h1>
+  <h1>Banking Loan Analyzer</h1>
 </md-toolbar>
 
-<md-sidenav-container style="height: 88vh;background: skyblue">
+<md-sidenav-container style="height: 88vh;">
 
   <md-sidenav #sidenav mode="side" class="sidenav-style">
     Sidenav!
@@ -17,36 +17,16 @@
 
   <md-tab-group>
 
-    <md-tab label="Tab 1">
-      <div style="background: skyblue"
+    <md-tab label="Loan Details">
+      <div
            #gridView
            [ngStyle]="{ 'width.px': divSize, 'font-size.px': fontSize }"
            [fxShow]="setColNum(gridView.style.width)">
-        <md-grid-list [cols]="columnNum"
-                      rowHeight="100px">
-          <md-grid-tile>
-            A
-          </md-grid-tile>
 
-          <md-grid-tile>
-            B
-          </md-grid-tile>
-
-          <md-grid-tile>
-            C
-          </md-grid-tile>
-        </md-grid-list>
-      </div>
-
-      <p fxFlex fxFlexAlign="center">Select Div Width For Testing:</p>
-      <div fxLayoutGap="15px">
-        <button md-raised-button (click)="divSize = 350">350 px</button>
-        <button md-raised-button (click)="divSize = 600">600 px</button>
-        <button md-raised-button (click)="divSize = 800">800 px</button>
       </div>
     </md-tab>
 
-    <md-tab label="Tab 2">
+    <md-tab label="Transactions">
       <div fxShow.xs="true" fxShow="false">Screen size <h1>XS</h1></div>
       <div fxShow.sm="true" fxShow="false">Screen size <h1>SM</h1></div>
       <div fxShow.md="true" fxShow="false">Screen size <h1>MD</h1></div>
@@ -72,7 +52,7 @@
       </md-grid-list>
     </md-tab>
 
-    <md-tab label="Tab 3">
+    <md-tab label="Visualizations">
       <div fxShow.xs="true" fxShow="false">Screen size <h1>XS</h1></div>
       <div fxShow.sm="true" fxShow="false">Screen size <h1>SM</h1></div>
       <div fxShow.md="true" fxShow="false">Screen size <h1>MD</h1></div>
