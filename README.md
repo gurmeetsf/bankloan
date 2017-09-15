@@ -2,7 +2,19 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.2.4.
 
-## Development server
+## MAKING it heroku ready
+1. copy angular cli and compiler dependency from dev dependencies to dependencies
+2. Do the same thing for the typscript dev dependency
+3. add a new scripts target called "postinstall": "ng build --prod"
+4. Add engines element to allow heroku to find node and npm dependencies
+       "engines": {
+          "node": "7.9.0",
+          "npm": "4.2.0"
+        }
+5. Install the express server for node app
+6. 
+
+
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
