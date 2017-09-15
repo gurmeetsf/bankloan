@@ -1,0 +1,21 @@
+.sidenav-style {
+  background: orange;
+  width: 200px;
+}
+
+.body-margin {
+  margin-left: 1%;
+}
+
+md-grid-tile {
+  background: red
+
+}
+
+.sample-div {
+  width: 150px;
+  height: 75px;
+  background: #ff0066;
+  font-weight: bold;
+  color: white;
+}
