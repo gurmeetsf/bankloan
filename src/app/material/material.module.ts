@@ -5,7 +5,11 @@ import {
   MdMenuModule,
   MdToolbarModule,
   MdIconModule,
-  MdCardModule, MdGridListModule, MdSidenavModule, MdTabsModule
+  MdCardModule,
+  MdGridListModule,
+  MdSidenavModule,
+  MdTabsModule,
+  MdTableModule
 } from '@angular/material';
 
 @NgModule({
@@ -17,7 +21,8 @@ import {
     MdCardModule,
     MdGridListModule,
     MdSidenavModule,
-    MdTabsModule
+    MdTabsModule,
+    MdTableModule
 
 
   ],
@@ -29,7 +34,8 @@ import {
     MdCardModule,
     MdGridListModule,
     MdSidenavModule,
-    MdTabsModule
+    MdTabsModule,
+    MdTableModule
   ]
 })
 export class MaterialModule {
